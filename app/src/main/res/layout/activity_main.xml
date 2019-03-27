@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com1032.cw2.mm01632.mm01632cw2com1032.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="515dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="-4dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Hospital Locator"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clinic_checkBox"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Go to Map"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@+id/search"
+            android:layout_marginEnd="13dp"
+            android:layout_toStartOf="@+id/search"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="city"/>
+
+        <CheckBox
+            android:id="@+id/hospital_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/clinic_checkBox"
+            android:layout_alignBottom="@+id/clinic_checkBox"
+            android:layout_toStartOf="@+id/btn_go"
+            android:text="Hospital" />
+
+        <CheckBox
+            android:id="@+id/clinic_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/private_checkBox"
+            android:layout_alignBottom="@+id/private_checkBox"
+            android:layout_centerHorizontal="true"
+            android:text="Clinic" />
+
+        <CheckBox
+            android:id="@+id/private_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search"
+            android:layout_marginTop="13dp"
+            android:layout_toEndOf="@+id/btn_go"
+            android:text="Private" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@+id/textView"
+            android:text="Search"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/hospital_List"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="11dp"
+            android:layout_marginTop="254dp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
